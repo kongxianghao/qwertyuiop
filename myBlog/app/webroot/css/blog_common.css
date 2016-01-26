@@ -1,0 +1,94 @@
+body{
+	padding-top: 50px;
+	font-size:12px;
+	color:#777;
+}
+/* header  */
+.header > div{
+	background-color:#333;
+	font-size:14px;
+}
+.navbar_badge_background_color{
+	background-color:#303A40;border-bottom:0px solid #303A40
+}
+.active_background_color  > a{
+	background-color:#3689B3!important;
+}
+/* content  */
+span.for_transform{
+	transition:All 0.4s ease-in-out;
+	-webkit-transition:All 0.4s ease-in-out;
+	-moz-transition:All 0.4s ease-in-out;
+	-o-transition:All 0.4s ease-in-out;
+}
+span.for_transform:hover{
+	transform:rotate(360deg);
+	-webkit-transform:rotate(360deg);
+	-moz-transform:rotate(360deg);
+	-o-transform:rotate(360deg);
+	-ms-transform:rotate(360deg);
+}
+/* content list-group  */
+.new_blog_lable{
+	font-weight:700!important;border-color:#FA9900!important;background-color:#FA9900!important;
+}
+.new_blog_lable > span{
+	font-size:14px;
+}
+
+.sort_blog_lable{
+	font-weight:700!important;
+}
+.sort_blog_lable > span{
+	font-size:14px;
+}
+.about_link{
+	font-weight:700!important;border-color:#FA99a0!important;background-color:#FA99a0!important;
+}
+.about_link > span{
+	font-size:14px;
+}
+
+/* footer  */
+div.footer{
+	padding-top:20px;text-align:center;border-top:1px solid #e5e5e5;
+}
+/* common  */
+.no_bottom_radius{
+	border-bottom-left-radius:0px!important ; 
+	border-bottom-right-radius: 0px!important ; 
+}
+.no_top_radius{
+	border-top-left-radius:0px!important ; 
+	border-top-right-radius: 0px!important ; 
+}
+div.blog_common_content {
+	padding-top:10px;
+	font-size:14px;
+	color:#333;
+}
+div.blog_common_content p{
+	margin:0px 0px 0px 0px;
+}
+.l_tit {
+    FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3D9CCC', endColorstr='#246889');/*ie*/           
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#3D9CCC), to(#246889));/*Safari */           
+    background:-moz-linear-gradient(top, #3D9CCC, #246889);/*Firefox*/
+	background:-ms-linear-gradient(top,#3D9CCC,#246889)
+} 
+/*  media start */
+div.media_lable{
+	width:64px;height:64px;background: none repeat scroll 0% 0% #303A40;color:#F7F7F7;text-align: center
+}
+div.media_lable :first-child{
+	font-size:26px;
+}
+div.media-body-other{
+	padding-left:10px;
+	border-bottom:1px dashed #e5e5e5;
+	padding-bottom:10px;
+}
+div.media-body-other > .media-other-heading{
+	color:#337AB7;
+}
+/*  media end */

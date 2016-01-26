@@ -1,0 +1,11 @@
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$ [NC]
+RewriteCond %{HTTP_REFERER} !localhost [NC]
+RewriteCond %{HTTP_REFERER} !kongxh.cn [NC]
+RewriteCond %{HTTP_REFERER} !simcole.cn [NC]
+RewriteCond %{HTTP_REFERER} !zhuaxia.com [NC]
+RewriteCond %{HTTP_REFERER} !google.com [NC]
+RewriteCond %{HTTP_REFERER} !baidu.com [NC]
+RewriteCond %{HTTP_REFERER} !bloglines.com [NC]
+
+RewriteRule .(jpg|gif|png|bmp|swf|jpeg) /image/replace.jpg [R,NC,L]
