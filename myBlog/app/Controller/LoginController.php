@@ -28,7 +28,6 @@ class LoginController extends BaseController {
 		$username = $this->getParameterByPost("USER_NAME");
 		$password = $this->getParameterByPost("USER_PASSWORD");
 		
-		//xh599017330 //ju5211314
 		if(md5($username) == '83f724035c5f771e9e92f84b54d00216' && md5($password) == 'f5cb9b4a7cde4c6e51b524a1e0f58bea'){
 			$user = array();
 			$user['username'] = $username;
