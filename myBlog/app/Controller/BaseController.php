@@ -8,9 +8,6 @@ class BaseController extends AppController {
 		if ($this->request->is('post')) {
 			if(array_key_exists($name, $_POST)){
 				$parameter = $this->request->data[$name];
-				if($this->isEmpty($parameter)){
-					$parameter = $defultValue;
-				}
 			}
 		}
 		return $parameter;
@@ -21,9 +18,6 @@ class BaseController extends AppController {
 		if ($this->request->is('post')) {
 			if(array_key_exists($name, $_POST)){
 				$parameter = $this->request->data[$name];
-				if($this->isEmpty($parameter)){
-					$parameter = $defultValue;
-				}
 				$parameter = Sanitize::escape($parameter);
 			}
 		}
@@ -46,9 +40,6 @@ class BaseController extends AppController {
 		if ($this->request->is('post')) {
 			if(array_key_exists($name, $_POST)){
 				$parameter = $this->request->data[$name];
-				if($this->isEmpty($parameter)){
-					$parameter = $defultValue;
-				}
 				if($allow != null){
 					$parameter = Sanitize::paranoid($parameter,$allow);
 				}else{
@@ -67,9 +58,6 @@ class BaseController extends AppController {
 		if ($this->request->is('post')) {
 			if(array_key_exists($name, $_POST)){
 				$parameter = $this->request->data[$name];
-				if($this->isEmptyArray($parameter)){
-					$parameter = $defultValueArray;
-				}
 			}
 		}
 		return $parameter;
